@@ -12,7 +12,7 @@ export class HomePage {
 
 
   public login() {
-    this._rt.navigateByUrl('/main/dash', { replaceUrl: true });
+    this._rt.navigateByUrl('/dash', { replaceUrl: true });
   }
 
 }

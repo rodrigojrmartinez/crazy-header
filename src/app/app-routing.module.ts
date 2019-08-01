@@ -7,11 +7,19 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'access',
-    loadChildren: './main/main.module#MainPageModule'
+    path: 'dash',
+    loadChildren: './dash/dash.module#DashPageModule'
+  },
+  {
+    path: 'first',
+    loadChildren: './first/first.module#FirstPageModule'
+  },
+  {
+    path: 'second',
+    loadChildren: './second/second.module#SecondPageModule'
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'access' }
+  { path: '**', redirectTo: 'dash' }
 ];
 
 @NgModule({

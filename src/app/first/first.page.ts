@@ -12,6 +12,6 @@ export class FirstPage {
 
 
   public navigateSecond() {
-    this._rt.navigate(['/access/main/test/second']);
+    this._rt.navigate(['/second']);
   }
 }

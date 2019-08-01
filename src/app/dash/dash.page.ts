@@ -12,6 +12,6 @@ export class DashPage {
 
 
   public redirect() {
-    this._rt.navigateByUrl('/access/main/test');
+    this._rt.navigateByUrl('/first');
   }
 }
