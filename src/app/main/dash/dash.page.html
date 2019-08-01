@@ -1,0 +1,71 @@
+<ion-content padding forceOverscroll="true" scrollY="false">
+  <ion-toolbar color="transparent">
+    <ion-buttons slot="start">
+      <ion-menu-button id="menu" color="light">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="ion-padding">
+    <ion-card class="user">
+      <ion-avatar>
+        <img src="assets/img/avatar.jpeg">
+      </ion-avatar>
+      <ion-card-content padding>
+        <p text-center color="dark">
+          My Name
+        </p>
+        <small text-center color="dark">
+          Date
+        </small>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-grid no-padding>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="6" no-padding>
+        <ion-card text-center (click)="redirect()" type="button" button="true"
+          style="margin-bottom: 2em;margin-right:1em;">
+          <ion-card-content no-padding class="ion-align-items-center ">
+            <ion-icon name="add" size="large"></ion-icon>
+            <br />
+            <span>NAV TEST</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" no-padding>
+        <ion-card text-center (click)="redirect()" type="button" button="true"
+          style="margin-bottom: 2em;margin-left:1em;">
+          <ion-card-content no-padding class="ion-align-items-center ">
+            <ion-icon name="add" size="large"></ion-icon>
+            <br />
+            <span>NAV TEST</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" no-padding>
+        <ion-card text-center (click)="redirect()" type="button" button="true"
+          style="margin-bottom: 2em;margin-right:1em;">
+          <ion-card-content no-padding class="ion-align-items-center ">
+            <ion-icon name="add" size="large"></ion-icon>
+            <br />
+            <span>NAV TEST</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" no-padding>
+        <ion-card text-center (click)="redirect()" type="button" button="true"
+          style="margin-bottom: 2em;margin-left:1em;">
+          <ion-card-content no-padding class="ion-align-items-center ">
+            <ion-icon name="add" size="large"></ion-icon>
+            <br />
+            <span>NAV TEST</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-menu contentId="menu" side="start" swipeGesture="false" type="overlay" ion-padding>
+  here is a menu!
+</ion-menu>
+<div class="background"></div>

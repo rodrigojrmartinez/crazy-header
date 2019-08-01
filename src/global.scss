@@ -24,3 +24,39 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-app{
+    .background{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -130px;
+        bottom: 0;
+        z-index: 1;
+        transition: top .250s;
+    }
+
+    &.ios {
+        /* iPhone 6, 7, & 8 */
+        @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+            div.background {
+                background: #F8F8F8 url('./assets/img/ios/Default@2x~iphone.png') no-repeat center center / cover;
+            }
+        }
+
+        /* iPhone iPhone 6, 7, & 8 Plus */
+        @media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+            div.background {
+                background: #F8F8F8 url('./assets/img/ios/Default-568h@2x~iphone.png') no-repeat center center / cover;
+            }
+        }
+
+        /* iPhone X */
+        @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+            div.background {
+                background: #F8F8F8 url('./assets/img/ios/Default-667h.png') no-repeat center center / cover;
+            }
+        }
+    }
+}

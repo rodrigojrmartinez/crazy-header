@@ -74,4 +74,35 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+  .ion-color-test {
+    --ion-color-base: linear-gradient(90deg, #FFAB00, #FFC800);
+    --ion-color-base-rgb: 255, 171, 0;
+    --ion-color-contrast: #ffffff;
+    --ion-color-contrast-rgb: 255, 255, 255;
+    --ion-color-shade: linear-gradient(90deg, #FFAB00, #FFC800);
+    --ion-color-tint: linear-gradient(90deg, #FFAB00, #FFC800);
+  }
+
+  ion-content {
+    transition: bottom .250s;
+    --background: transparent;
+    z-index: 2;
+  }
+
+  ion-header {
+    border-bottom: 0px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.12);
+
+    ion-toolbar {
+      --border-width: 0;
+      --min-height: 78px;
+
+      &.white {
+        background: white;
+      }
+
+    }
+  }
 }
